@@ -1,6 +1,6 @@
 using Landis.Core;
 using Landis.Utilities;
-using Landis.Library.LeafBiomassCohorts;
+using Landis.Library.BiomassCohorts;
 using System.Text;
 using System;
 using System.Linq;
@@ -158,14 +158,14 @@ namespace Landis.Library.InitialCommunities
 
                     foreach (ushort age_key in ageBio.Keys)
                     {
-                        float initialWoodBiomass = ageBio[age_key];
-                        float initialLeafBiomass = (float) 0.0;
+                        int initialWoodBiomass = (int) ageBio[age_key];
+                        //float initialLeafBiomass = (float) 0.0;
                         if (initialWoodBiomass <= 0.0)
                             throw new InputValueException(speciesName.Value.String,
                                                           "Cohort {0}, age {1} has zero or negative biomass, line {2}",
                                                           species.Name, age_key, lineNumber);
 
-                        speciesCohortsList.Add(new SpeciesCohorts(species, age_key, initialWoodBiomass, initialLeafBiomass));
+                        speciesCohortsList.Add(new SpeciesCohorts(species, age_key, initialWoodBiomass));
                     }
 
                     GetNextLine();
@@ -185,7 +185,7 @@ namespace Landis.Library.InitialCommunities
             DataTable communityTable = communityParser.ParseToDataTable(path);
             Dictionary<int, List<ISpeciesCohorts>> mapCodeList = new Dictionary<int, List<ISpeciesCohorts>>();
 
-            float initialLeafBiomass = (float)0.0;
+            //float initialLeafBiomass = (float)0.0;
 
 
             foreach (DataRow row in communityTable.Rows)
@@ -220,11 +220,11 @@ namespace Landis.Library.InitialCommunities
                     if (!mapCodeList.ContainsKey(mapCode))
                     {
                         mapCodeList.Add(mapCode, listOfCohorts);
-                        mapCodeList[mapCode].Add(new SpeciesCohorts(species, (ushort)age, (float)wood_biomass, initialLeafBiomass));
+                        mapCodeList[mapCode].Add(new SpeciesCohorts(species, (ushort)age, wood_biomass));
                     }
                     else
                     {
-                        mapCodeList[mapCode].Add(new SpeciesCohorts(species, (ushort)age, (float)wood_biomass, initialLeafBiomass));
+                        mapCodeList[mapCode].Add(new SpeciesCohorts(species, (ushort)age, wood_biomass));
                     }
 
                 }

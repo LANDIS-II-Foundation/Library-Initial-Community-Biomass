@@ -48,3 +48,8 @@ obj/Release/netstandard2.0/initial-community.csproj.FileListAbsolute.txt
 obj/Release/netstandard2.0/initial-community.csprojAssemblyReference.cache
 obj/Release/netstandard2.0/Landis.Library.InitialCommunity.LeafBiomass.dll
 obj/Release/netstandard2.0/Landis.Library.InitialCommunity.LeafBiomass.pdb
+.vs/initial-community/v16/Server/sqlite3/storage.ide-shm
+.vs/initial-community/v16/Server/sqlite3/storage.ide-wal
+bin/Release/netstandard2.0/Landis.Library.InitialCommunity.Biomass.deps.json
+obj/Release/netstandard2.0/Landis.Library.InitialCommunity.Biomass.dll
+obj/Release/netstandard2.0/Landis.Library.InitialCommunity.Biomass.pdb

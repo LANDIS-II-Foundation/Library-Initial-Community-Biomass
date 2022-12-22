@@ -1,15 +1,15 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <RootNamespace>Landis.Library.InitialCommunity.LeafBiomass</RootNamespace>
-    <AssemblyName>Landis.Library.InitialCommunity.LeafBiomass</AssemblyName>
-    <AssemblyTitle>Landis.Library.InitialCommunity.LeafBiomass</AssemblyTitle>
+    <RootNamespace>Landis.Library.InitialCommunity.Biomass</RootNamespace>
+    <AssemblyName>Landis.Library.InitialCommunity.Biomass</AssemblyName>
+    <AssemblyTitle>Landis.Library.InitialCommunity.Biomass</AssemblyTitle>
     <AssemblyCompany>LANDIS-II Foundation</AssemblyCompany>
-    <AssemblyProduct>Landis.Library.InitialCommunity.LeafBiomass</AssemblyProduct>
+    <AssemblyProduct>Landis.Library.InitialCommunity.Biomass</AssemblyProduct>
     <AssemblyCopyright>LANDIS-II Foundation</AssemblyCopyright>        
     <AssemblyDescription>Initial Communities Library for LANDIS-II</AssemblyDescription>
-    <AssemblyVersion>1.1</AssemblyVersion>
-    <Version>1.1</Version>
-    <FileVersion>1.1</FileVersion>
+    <AssemblyVersion>1.0</AssemblyVersion>
+    <Version>1.0</Version>
+    <FileVersion>1.0</FileVersion>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <RepositoryUrl>https://github.com/LANDIS-II-Foundation/Library-Initial-Community</RepositoryUrl>
@@ -38,9 +38,6 @@
     </Reference>
     <Reference Include="Landis.Library.Cohorts-v2">
       <HintPath>lib\Landis.Library.Cohorts-v2.dll</HintPath>
-    </Reference>
-    <Reference Include="Landis.Library.LeafBiomassCohorts-v2">
-      <HintPath>lib\Landis.Library.LeafBiomassCohorts-v2.dll</HintPath>
     </Reference>
   </ItemGroup>
   
