@@ -53,3 +53,15 @@ obj/Release/netstandard2.0/Landis.Library.InitialCommunity.LeafBiomass.pdb
 bin/Release/netstandard2.0/Landis.Library.InitialCommunity.Biomass.deps.json
 obj/Release/netstandard2.0/Landis.Library.InitialCommunity.Biomass.dll
 obj/Release/netstandard2.0/Landis.Library.InitialCommunity.Biomass.pdb
+.vs/initial-community/DesignTimeBuild/.dtbcache.v2
+.vs/initial-community/FileContentIndex/0f4f72bb-3e40-4de6-ba9c-c524e442cd47.vsidx
+.vs/initial-community/FileContentIndex/da3e59d0-1688-4784-86b4-cfbb94aadb49.vsidx
+.vs/initial-community/FileContentIndex/read.lock
+.vs/initial-community/v17/.futdcache.v1
+.vs/initial-community/v17/.suo
+.vs/ProjectEvaluation/initial-community.metadata.v2
+.vs/ProjectEvaluation/initial-community.projects.v2
+obj/Debug/netstandard2.0/.NETStandard,Version=v2.0.AssemblyAttributes.cs
+obj/Debug/netstandard2.0/initial-community.csproj.AssemblyReference.cache
+obj/Debug/netstandard2.0/initial-community.GeneratedMSBuildEditorConfig.editorconfig
+obj/project.nuget.cache
